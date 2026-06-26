@@ -3,13 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amazon UI Clone</title>
-    <!-- Tailwind CSS CDN -->
+    <title>Amazon UI Mockup Clone</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- FontAwesome for Amazon-like Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* Custom scrollbar to mimic premium desktop feel */
+        /* Modern scannable custom scrollbar matching desktop web applications */
         ::-webkit-scrollbar { width: 8px; height: 8px; }
         ::-webkit-scrollbar-track { background: #f1f1f1; }
         ::-webkit-scrollbar-thumb { background: #888; border-radius: 4px; }
@@ -18,19 +16,15 @@
 </head>
 <body class="bg-[#eaeded] font-sans antialiased text-[#0f1111]">
 
-    <!-- 1. MAIN AMAZON HEADER -->
     <header class="bg-[#131921] text-white text-sm sticky top-0 z-50">
         <div class="flex items-center justify-between px-4 py-2 gap-4">
             
-            <!-- Left: Logo & Location -->
             <div class="flex items-center gap-4">
-                <!-- Mock Logo -->
-                <a href="#" class="border border-transparent hover:border-white p-2 rounded-sm text-xl font-black tracking-tight text-white flex items-center">
+                <a href="#" class="border border-transparent hover:border-white p-2 rounded-xs text-xl font-black tracking-tight text-white flex items-center">
                     amazon<span class="text-[#febd69] text-xs align-super font-normal ml-0.5">.clone</span>
                 </a>
                 
-                <!-- Deliver to Location -->
-                <button class="hidden md:flex flex-col border border-transparent hover:border-white p-2 rounded-sm text-left leading-tight cursor-pointer">
+                <button class="hidden md:flex flex-col border border-transparent hover:border-white p-2 rounded-xs text-left leading-tight cursor-pointer">
                     <span class="text-xs text-gray-300 ml-5">Deliver to</span>
                     <span class="font-bold flex items-center gap-1">
                         <i class="fa-solid fa-location-dot text-sm"></i> United States
@@ -38,9 +32,8 @@
                 </button>
             </div>
 
-            <!-- Center: Search Bar -->
             <div class="flex flex-1 max-w-3xl items-center bg-white rounded-md focus-within:ring-2 focus-within:ring-[#f3a847] overflow-hidden">
-                <button class="bg-[#f3f3f3] text-gray-600 hover:bg-gray-200 px-3 py-2 text-xs border-r border-gray-300 flex items-center gap-1 cursor-pointer">
+                <button class="bg-[#f3f3f3] text-gray-600 hover:bg-gray-200 px-3 py-2 text-xs border-r border-gray-300 flex items-center gap-1 cursor-pointer transition-colors">
                     All <i class="fa-solid fa-caret-down text-[10px]"></i>
                 </button>
                 <input type="text" placeholder="Search Amazon" class="w-full px-3 py-2 text-black placeholder-gray-500 focus:outline-none text-base">
@@ -49,27 +42,22 @@
                 </button>
             </div>
 
-            <!-- Right: Language, Account, Orders & Cart -->
             <div class="flex items-center gap-1">
-                <!-- Language Indicator -->
-                <button class="hidden lg:flex items-center gap-1 border border-transparent hover:border-white p-2 rounded-sm cursor-pointer font-bold">
+                <button class="hidden lg:flex items-center gap-1 border border-transparent hover:border-white p-2 rounded-xs cursor-pointer font-bold">
                     🇺🇸 EN <i class="fa-solid fa-caret-down text-[10px] text-gray-400"></i>
                 </button>
 
-                <!-- Accounts & Lists -->
-                <button class="flex flex-col border border-transparent hover:border-white p-2 rounded-sm text-left leading-tight cursor-pointer">
+                <button class="flex flex-col border border-transparent hover:border-white p-2 rounded-xs text-left leading-tight cursor-pointer">
                     <span class="text-xs text-gray-300">Hello, sign in</span>
                     <span class="font-bold flex items-center gap-1">Account & Lists <i class="fa-solid fa-caret-down text-[10px] text-gray-400"></i></span>
                 </button>
 
-                <!-- Returns & Orders -->
-                <button class="hidden sm:flex flex-col border border-transparent hover:border-white p-2 rounded-sm text-left leading-tight cursor-pointer">
+                <button class="hidden sm:flex flex-col border border-transparent hover:border-white p-2 rounded-xs text-left leading-tight cursor-pointer">
                     <span class="text-xs text-gray-300">Returns</span>
                     <span class="font-bold">& Orders</span>
                 </button>
 
-                <!-- Shopping Cart -->
-                <a href="#" class="flex items-end border border-transparent hover:border-white p-2 rounded-sm font-bold relative gap-1">
+                <a href="#" class="flex items-end border border-transparent hover:border-white p-2 rounded-xs font-bold relative gap-1">
                     <div class="relative">
                         <span class="absolute -top-2 left-2/4 -translate-x-2/4 bg-[#131921] text-[#f3a847] text-base rounded-full px-1 font-bold leading-none">0</span>
                         <i class="fa-solid fa-cart-shopping text-3xl text-white"></i>
@@ -79,17 +67,16 @@
             </div>
         </div>
 
-        <!-- 2. SUB-NAVIGATION BAR -->
         <div class="bg-[#232f3e] flex items-center justify-between px-4 py-1.5 text-xs font-medium">
             <div class="flex items-center gap-3 overflow-x-auto whitespace-nowrap">
-                <button class="flex items-center gap-1 font-bold hover:outline hover:outline-1 outline-white px-2 py-1 rounded-sm cursor-pointer">
+                <button class="flex items-center gap-1 font-bold hover:outline hover:outline-1 outline-white px-2 py-1 rounded-xs cursor-pointer">
                     <i class="fa-solid fa-bars text-base"></i> All
                 </button>
-                <a href="#" class="hover:outline hover:outline-1 outline-white px-2 py-1 rounded-sm">Today's Deals</a>
-                <a href="#" class="hover:outline hover:outline-1 outline-white px-2 py-1 rounded-sm">Customer Service</a>
-                <a href="#" class="hover:outline hover:outline-1 outline-white px-2 py-1 rounded-sm">Registry</a>
-                <a href="#" class="hover:outline hover:outline-1 outline-white px-2 py-1 rounded-sm">Gift Cards</a>
-                <a href="#" class="hover:outline hover:outline-1 outline-white px-2 py-1 rounded-sm hidden md:inline">Sell</a>
+                <a href="#" class="hover:outline hover:outline-1 outline-white px-2 py-1 rounded-xs">Today's Deals</a>
+                <a href="#" class="hover:outline hover:outline-1 outline-white px-2 py-1 rounded-xs">Customer Service</a>
+                <a href="#" class="hover:outline hover:outline-1 outline-white px-2 py-1 rounded-xs">Registry</a>
+                <a href="#" class="hover:outline hover:outline-1 outline-white px-2 py-1 rounded-xs">Gift Cards</a>
+                <a href="#" class="hover:outline hover:outline-1 outline-white px-2 py-1 rounded-xs hidden md:inline">Sell</a>
             </div>
             <div class="hidden lg:block font-bold text-sm text-[#febd69] hover:underline cursor-pointer">
                 Shop great deals now
@@ -97,47 +84,40 @@
         </div>
     </header>
 
-    <!-- 3. HERO BANNER BACKGROUND -->
     <main class="relative max-w-[1500px] mx-auto px-4 pb-12">
-        <!-- Mask gradient creates the Amazon fade-to-gray effect over the cards -->
         <div class="absolute inset-x-0 top-0 h-[600px] bg-gradient-to-b from-transparent to-[#eaeded] z-0 pointer-events-none"></div>
         <div class="w-full h-[250px] sm:h-[400px] md:h-[500px] overflow-hidden rounded-b-md">
-            <!-- Using a standard high-quality landscape placeholder representing a banner theme -->
             <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?auto=format&fit=crop&w=1500&q=80" 
-                 alt="Promo Banner" 
+                 alt="Promo Banner Layout" 
                  class="w-full h-full object-cover object-top">
         </div>
 
-        <!-- 4. FLOATING PRODUCT GRID CONTAINER -->
-        <!-- Negative top margin pulls the grid layout over the background image -->
         <div class="relative z-10 -mt-16 sm:-mt-32 md:-mt-48 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             
-            <!-- Card 1: 4-Quadrant Category Grid -->
-            <div class="bg-white p-5 flex flex-col justify-between shadow-xs rounded-sm">
+            <div class="bg-white p-5 flex flex-col justify-between shadow-xs rounded-xs">
                 <h3 class="text-xl font-bold mb-3">Gaming accessories</h3>
                 <div class="grid grid-cols-2 gap-3 mb-4">
                     <div class="cursor-pointer group">
-                        <div class="bg-gray-100 p-2 rounded-xs"><img src="https://images.unsplash.com/photo-1600861195091-690c92f1d2cc?auto=format&fit=crop&w=200&h=180&q=80" class="w-full h-28 object-cover"></div>
-                        <span class="text-xs text-gray-700 group-hover:text-amber-700 mt-1 block">Headsets</span>
+                        <div class="bg-gray-100 p-2 rounded-xs"><img src="https://images.unsplash.com/photo-1600861195091-690c92f1d2cc?auto=format&fit=crop&w=200&h=180&q=80" alt="Headset" class="w-full h-28 object-cover"></div>
+                        <span class="text-xs text-gray-700 group-hover:text-amber-700 mt-1 block font-medium">Headsets</span>
                     </div>
                     <div class="cursor-pointer group">
-                        <div class="bg-gray-100 p-2 rounded-xs"><img src="https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=200&h=180&q=80" class="w-full h-28 object-cover"></div>
-                        <span class="text-xs text-gray-700 group-hover:text-amber-700 mt-1 block">Keyboards</span>
+                        <div class="bg-gray-100 p-2 rounded-xs"><img src="https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=200&h=180&q=80" alt="Keyboards" class="w-full h-28 object-cover"></div>
+                        <span class="text-xs text-gray-700 group-hover:text-amber-700 mt-1 block font-medium">Keyboards</span>
                     </div>
                     <div class="cursor-pointer group">
-                        <div class="bg-gray-100 p-2 rounded-xs"><img src="https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=200&h=180&q=80" class="w-full h-28 object-cover"></div>
-                        <span class="text-xs text-gray-700 group-hover:text-amber-700 mt-1 block">Computer Mice</span>
+                        <div class="bg-gray-100 p-2 rounded-xs"><img src="https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=200&h=180&q=80" alt="Mice" class="w-full h-28 object-cover"></div>
+                        <span class="text-xs text-gray-700 group-hover:text-amber-700 mt-1 block font-medium">Computer Mice</span>
                     </div>
                     <div class="cursor-pointer group">
-                        <div class="bg-gray-100 p-2 rounded-xs"><img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=200&h=180&q=80" class="w-full h-28 object-cover"></div>
-                        <span class="text-xs text-gray-700 group-hover:text-amber-700 mt-1 block">Chairs</span>
+                        <div class="bg-gray-100 p-2 rounded-xs"><img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=200&h=180&q=80" alt="Chairs" class="w-full h-28 object-cover"></div>
+                        <span class="text-xs text-gray-700 group-hover:text-amber-700 mt-1 block font-medium">Chairs</span>
                     </div>
                 </div>
                 <a href="#" class="text-xs text-[#007185] hover:text-[#c45500] hover:underline font-medium">See more</a>
             </div>
 
-            <!-- Card 2: Single Target Product -->
-            <div class="bg-white p-5 flex flex-col justify-between shadow-xs rounded-sm">
+            <div class="bg-white p-5 flex flex-col justify-between shadow-xs rounded-xs">
                 <h3 class="text-xl font-bold mb-3">Deals on Gadgets</h3>
                 <div class="bg-gray-50 p-4 flex items-center justify-center cursor-pointer mb-4">
                     <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=400&h=400&q=80" 
@@ -147,8 +127,7 @@
                 <a href="#" class="text-xs text-[#007185] hover:text-[#c45500] hover:underline font-medium">Shop all deals</a>
             </div>
 
-            <!-- Card 3: Single Target Product 2 -->
-            <div class="bg-white p-5 flex flex-col justify-between shadow-xs rounded-sm">
+            <div class="bg-white p-5 flex flex-col justify-between shadow-xs rounded-xs">
                 <h3 class="text-xl font-bold mb-3">Refresh your home space</h3>
                 <div class="bg-gray-50 p-4 flex items-center justify-center cursor-pointer mb-4">
                     <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=400&h=400&q=80" 
@@ -158,8 +137,7 @@
                 <a href="#" class="text-xs text-[#007185] hover:text-[#c45500] hover:underline font-medium">Explore styles</a>
             </div>
 
-            <!-- Card 4: Sign In CTA / Ad Variant Card -->
-            <div class="bg-white p-5 flex flex-col justify-between shadow-xs rounded-sm">
+            <div class="bg-white p-5 flex flex-col justify-between shadow-xs rounded-xs">
                 <div>
                     <h3 class="text-xl font-bold mb-3">Sign in for the best experience</h3>
                     <button class="w-full bg-[#ffd814] hover:bg-[#f7ca00] text-black rounded-md py-2 text-sm shadow-xs border border-[#fcd200] cursor-pointer font-medium transition-colors mb-3">
